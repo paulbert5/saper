@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+header {
+    height: 70px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111827;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.owner {
+    background: #1e293b;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: white;
+    border-radius: 18px;
+    padding: 30px 20px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #263449;
+}
+
+.card span {
+    font-size: 38px;
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+        font-size: 32px;
+    }
+  }
